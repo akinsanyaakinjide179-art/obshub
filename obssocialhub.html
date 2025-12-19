@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>obs social hub</title>
+        <link rel="stylesheet" href="obstech/nav2style.css" />
+
+      <style>
+        body {
+         background-color: rgb(46, 46, 163);
+         color: white;
+
+         }
+
+       .menu-toggle {
+        font-size: 20px;
+         cursor: pointer;
+         padding: 15px;
+         background-color: rgb(11, 11, 36);
+         color: white;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 1001;
+       }
+       .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(9, 9, 41);
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+       .sidebar-links li a {
+            color: rgb(187, 187, 250);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar-links li a:hover,
+        .sidebar-links li a.active {
+             background-color: rgb(35, 35, 90);
+             color: #fff;
+             border-left: 4px solid #0af;
+        }
+
+        .contanier {
+            width: 100%;
+            height: 350px;
+            background-color:rgb(4, 4, 19);
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(file_0000000006e0720ebe8ee9bb23ff2cb9.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+    
+               
+            
+        }
+        .smallbox {
+            width: 30%;
+            height: 100px;
+            background-color: rgb(6, 6, 41);
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            align-items: center;
+            border: 1px solid rgb(151, 151, 177);
+        }
+        .smallbox1 {
+            width: 100%;
+            height: 100px;
+            background-color: transparent;
+            display: flex;
+            font-size: 11px;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            margin-bottom: -30px;
+            
+            
+        }
+          .smallbox2 {
+            width: 60%;
+            height: 50px;
+            background-color: transparent;
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .smallbox3 {
+            width: 80%;
+            height: 50px;
+            background-color: transparent;
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -10px;
+            text-align: center;
+        }
+        .smallbox4 {
+            width: 80%;
+            height: 20px;
+            background-color: transparent;
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+        .smallbox5 {
+            width: 30%;
+            height: 40px;
+            background-color: rgb(25, 25, 226);
+            display: flex;
+            font-size: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        p1 {
+            color: rgb(31, 121, 31);
+        }
+    .contanier1 {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(2, 2, 44);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-direction: column;
+       
+    }
+
+    .smallbox6 {
+        width: 90%;
+        height: 50px;
+        background-color: transparent;
+        display: flex;
+        font-size: 12px;
+        margin-top: 10px;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -20px;
+
+    }
+    .box {
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+    }
+    .box1 {
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+    }
+    .box2 {
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+    }
+    .box3 {
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+    }
+   
+    .smallbox7 {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        display: flex;
+        margin-bottom: 10px;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box4 {
+        width: 80px;
+        height: 30px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    }
+    .box5 {
+        width: 80px;
+        height: 30px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    
+    }
+    .box6 {
+        width: 80px;
+        height: 30px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    
+    }
+    .box7 {
+        width: 80px;
+        height: 30px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    
+    }
+    .contanier2 {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(file_00000000502071f589c346be6badf8ba.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+        
+    }
+    .smallbox8 {
+        width: 100px;
+        height: 20px;
+        background-color:  rgb(3, 3, 14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+        border: 2px solid rgb(151, 151, 177);
+        color: white;
+        cursor: pointer;
+        
+    }
+    .smallbox9 {
+        width: 50%;
+        height: 50px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    
+        
+    }
+    .smallbox10 {
+        width: 90%;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        text-align: center;
+    }
+    .smallbox11 {
+        width: 100px;
+        height: 20px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        border-radius: 20px;
+        border: 2px solid rgb(151, 151, 177);
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    .contanier3 {
+        width: 90%;
+        height: 650px;
+        display: flex;
+        background-color: transparent;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 35px;
+        
+
+    }
+
+    .smallbox12 {
+        width: 100%;
+        height: 200px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .box8 {
+        width: 45%;
+        height: 200px;
+        background-color: rgb(1, 1, 34);
+        display: flex;
+        margin-top: 5px;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 5px;
+   
+    }
+
+    
+    .box9 {
+        width: 45%;
+        height: 200px;
+        display: flex;
+        background-color: rgb(1, 1, 34);
+        margin-top: 5px;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 10px;
+   
+   
+
+
+    }
+   
+   
+    .smallbox13 {
+        width: 100%;
+        height: 200px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+   
+    }
+    .box10 {
+        width: 45%;
+        height: 200px;
+        background-color: rgb(1, 1, 34);
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 15px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 10px;
+   
+   
+
+
+
+    }
+   
+    .box11 {
+        width: 45%;
+        height: 200px;
+        background-color: rgb(1, 1, 34);
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        justify-content: center;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 15px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 10px;
+   
+
+
+    }
+
+    .smallbox14 {
+        width: 100%;
+        height: 200px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+   
+    }
+
+    .box12 {
+        width: 45%;
+        height: 200px;
+        background-color: rgb(1, 1, 34);
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 15px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 10px;
+   
+   
+
+
+
+    }
+   
+    .box13 {
+        width: 45%;
+        height: 200px;
+        background-color: rgb(1, 1, 34);
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        border-radius: 10px;
+        background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 15px;
+        line-height: 15px;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 10px;
+   
+   
+    }
+   
+   .contanier4 {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+
+   }
+   .smallbox15 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .box14 {
+    width: 100px;
+    height:20px;
+    background-color: rgb(5, 5, 34);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px, solid whitesmoke;
+    font-size: 12px;
+    cursor: pointer;
+   } 
+   
+   .box15 {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-align: center;
+    
+
+   } 
+
+   .contanier5 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(197, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .smallbox16 {
+    width: 95%;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .box16 {
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+
+   }
+   .mbox {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   }
+   .mbox1 {
+        width: 100px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        flex-direction: column;
+        gap: 10px;
+
+   }
+
+
+   .box17 {
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+   
+   }
+   
+   .mbox2 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+
+   }
+   .mbox3 {
+        width: 100px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        flex-direction: column;
+        gap: 10px;
+
+   }
+
+   .box18 {
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+    
+   
+   }
+  
+   .mbox4 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   }
+   .mbox5 {
+        width: 100px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        flex-direction: column;
+        gap: 10px;
+
+   }
+
+
+
+   .box19 {
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+   
+   }
+   
+  
+   .mbox6 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   }
+   .mbox7 {
+        width: 100px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        flex-direction: column;
+        gap: 10px;
+
+   }
+
+.contanier6 {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.smallbox17 {
+    width: 90%;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.contanier7 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    background-image: url(file_00000000a488720ebdc8118e19241e45.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.smallbox18 {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    background-color: transparent;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box20 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+
+}
+.box21 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+}
+
+
+.box22 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+}
+
+
+.box23 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+}
+
+
+.box24 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+}
+
+.box25 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+   
+    
+}
+
+
+.box26 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+    justify-content: center;
+    
+
+    
+}
+
+.contanier8 {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    background-color: transparent;
+    background-image: url(file_00000000a23871f496648db297a9de20.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+                
+}
+.smallbox19 {
+    width: 95%;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.box27{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.box28 {
+    width: 70%;
+    height: 20px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.box29 {
+    width: 25%;
+    height: 30px;
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contanier9 {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    background-color: black;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallbox20 {
+    width: 35%;
+    height: 180px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.box30 {
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+}
+.box31 {
+    width: 140px;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box32 {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(5, 238, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.smallbox21 {
+    width: 20%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.smallbox22 {
+    width: 35%;
+    height: 160px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 50px;
+    
+   
+}
+.smallbox23 {
+    width: 33%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom:50px;
+    line-height: 20px;
+   
+}
+
+        </style>
+
+    </head>
+    <body>
+        <div class="menu-toggle" id="menu-toggle">☰ </div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <img src="obstech\LOGO_1762616578137.png" width="200" height="170">
+           
+            </div>
+            <ul class="sidebar-links">
+              <li><a href="#" class="active">HOME</a></li>
+              <li><a href="#">OUR SERVICES</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Messages</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </aside>
+          <main class="content">
+            <h1>Welcome</h1>
+            <p>This is OBS SOCIAL HUB, We Designe,Create an Engaging website.</p>
+          </main>
+        
+          
+        <script src="obstech/nav2script.js"></script>
+
+        <div class="contanier">
+            <div class="smallbox">
+                <img src="obstech\LOGO_1762616578137.png" width="140" height="85">
+          
+            </div>
+            <div class="smallbox1"><h1>Simplifying <p1>Your Social Media</p1> Experience</h1></div>
+            <div class="smallbox2">Maintaning Brand consistency across all platforms!</div>
+            <div class="smallbox3">This involves handling a brands's social media presence across platforms like Facebook, Instagram, Tiktok, X (Twiter) and Linkedin</div>
+            <div class="smallbox4">We are Leading Social Media Agency with global reach & services</div>
+            <div class="smallbox5">Let's Build Your Brand</div>
+           
+        </div>
+    <div class="contanier1">
+        <div class="smallbox6">
+            <div class="box"><h1>10+</h1></div>
+            <div class="box1"><h1>5+</h1></div>
+            <div class="box2"><h1>1500+</h1></div>
+            <div class="box3"><h1>10K+</h1></div>
+        
+        </div>
+        <div class="smallbox7">
+            <div class="box4">Years of experience</div>
+            <div class="box5">Countries Workedin</div>
+            <div class="box6">Successful Projects</div>
+            <div class="box7">hours worked</div>
+        
+        </div>
+    </div>
+    <div class="contanier2">
+        <div class="smallbox8">Our Services</div>
+        <div class="smallbox9">what can we do for you?</div>
+        <div class="smallbox10">We hold exceptional expertise in four main areas, we support
+            you throughout the customer journey to help acquire and retain new customers for your brand. we uphold high quality of standard
+            . our dedicated staff is ready to assist you with expertise and experience in your daily oprations.
+        </div>
+        <div class="smallbox11">View All services</div>
+    
+    </div>
+    <div class="contanier3">
+        <div class="smallbox12">
+            <div class="box8"><b>This Social Median Management</b>This service involves handling all aspects of clients
+                social media presence; including planing, creating, sheduling and analyzing posts
+            across platforms like Facebook, Instagram, Twiter and Linkdin
+            <br>- content Creation<br>- Sheduling & posting<br>- Engagement
+     
+    </div>
+            <div class="box9">
+            <b>Web Design & Development</b>
+            Creating professional, visually appealing and responsive
+            websites that reflect a brand's identity and convert visitors into customers.<br>- UI/UX Design
+            <br>- Responsive Design<br>- Friendly Development Site<br>- Maintanance & Updates
+
+            </div>
+      
+        </div>
+        <div class="smallbox13">
+            <div class="box10">
+                <b>Branding & Graphic Design</b>
+            Building the visual identity of a brand to create a consistent and memorable
+            image across all digital platforms.<br>- Logo Design<br>- Brand Identity Kits
+            <br>- Marketing materials<br>- Visual Storytelling
+ 
+
+            </div>
+            <div class="box11"><b>Digital Marketing & Advertising</b>Using online platforms
+                and tools to promote products or services to a targeted auidence for better visibility
+                and sales<br>- Social Media Ads<br>- Google Ads<br>- Email Marketing<br>- Analytics & Optimization
+            
+   </div>
+      
+        </div>
+        <div class="smallbox14">
+            <div class="box12">
+                <b>Social Media Training & Consultation</b>
+            Want to manage your social median yourself? We'll train you or your team on the best tools,
+            strategies, andd trends for lasting success.<br>- Social Media growing tools<br>- Platform Growth Tips & Trends<br>- Custom Strategy Consultation
+ 
+
+            </div>
+            <div class="box13">
+            <b>Content Creation & Strategy</b>Developing a content plan
+            and producing high-quality materials ( Text, videos, Blogs, Reels, etc.)
+            that attract and engage audience<br>- content Planing<br>- Visual & Videos content
+            <br>- Blog Writting & copywriting<br>- Trend Adaptation
+     
+
+            </div>
+      
+        </div>
+    </div>
+    <div class="contanier4">
+        <div class="smallbox15">
+            <div class="box14">Our Process</div>
+            <div class="box15">We work at the intersection of strategy, creativity, and technology
+                to help our clients digitally<br>reinvent their businesses
+            </div>
+     
+        </div>
+    
+    </div>
+    <div class="contanier5">
+        <div class="smallbox16">
+            <div class="box16">
+                <div class="mbox"><img src="obstech\pngwing.com-4-1.png" width="30" height="30"></div>
+                <div class="mbox1"><b>Discovery</b>We take time to understand your brand
+                identity , target audience, goals, and compitators. Through detailed social audits, research and strategy
+                Sessions and improve.
+                </div>
+            </div>
+            <div class="box17">
+                <div class="mbox2">
+                    <img src="obstech\pngwing.com-5-1.png" width="35" height="35">
+                </div>
+                <div class="mbox3"><b>Design</b>We create engaging, on brand content from post, reels, and stories to ad creatives that speake
+                diretly to ypur audience. Our team focuses on aesthetic consistency 
+                </div>
+            </div>
+            <div class="box18">
+                <div class="mbox4">
+                    <img src="obstech\pngwing.com-6-1.png" width="30" height="30">
+                </div>
+                <div class="mbox5"><b>Development</b>We set up social pages, automate posting systems, and develop content calenders for consistency. Our
+                team uses SEO friendly captions, hastags and trending stratagies
+                </div>
+            </div>
+            <div class="box19">
+                <div class="mbox6">
+                    <img src="obstech\pngwing.com-7.png" width="30" height="30">
+                </div>
+                <div class="mbox7"><b>Launch</b>Our team ensures a smooth, high impact launch with performance
+                tracking, community management, and post launch support. We monitor each day growth the brand.
+                </div>
+            </div>
+      
+        </div>
+    </div>
+    <div class="contanier6">
+        <div class="smallbox17"><h1>White Label Website Trusted By Thousand Of Agencies</h1></div>
+    </div>
+    <div class="contanier7">
+        <div class="smallbox18">
+            <div class="box20">What services does OBS social hub offer?</div>
+            <div class="box21">How can Obs social hub help my business?</div>
+            <div class="box22">Do you offer customized marketing plans?</div>
+            <div class="box23">What social media platforms do you manage?</div>
+            <div class="box24">How do i get started with OBS social hub?</div>
+            <div class="box25">How much do your services cost?</div>
+            <div class="box26">How do you measure the  sucess of acampaign?</div>
+        
+        </div>
+    </div>
+    <div class="contanier8">
+        <div class="smallbox19">
+            <div class="box27">The way you tell your story online, can make all the difference!</div>
+            <div class="box28">Our methodology has been tested and proven successful</div>
+            <div class="box29">Shedule Quick Call</div>
+        </div>
+    </div>
+    <div class="contanier9">
+        <div class="smallbox20">
+            <div class="box30">
+                <img src="obstech\LOGO_1762616578137.png" width="110" height="65">
+            </div>
+            <div class="box31">
+                <img src="pngwing.com-4.png" width="25" height="21">
+                <img src="pngwing.com.png" width="20" height="20">
+                <img src="pngwing.com-3.png" width="20" height="20">
+                <img src="pngwing.com-1.png" width="20" height="20">
+               
+            </div>
+            <div class="box32">
+                <img src="pngwing.com-8-1.png" width="20" height="20">
+               Chat on WhatsApp
+            </div>
+        </div>
+        <div class="smallbox21">Quick Links<br><br>Home<br>
+        Services<br>Blog<br>Contact Us
+        </div>
+        <div class="smallbox22">Services<br><br>Website Design &<br>Development<br>Social Median Management & content creation<br>
+             Paid ads campaigns<br>Branding & Graphics </div>
+        <div class="smallbox23">Contact Us<br><br>Monday - Friday<br>9:00am, - 5:00 pm.<br>+2348162449257</div>
+    
+    </div>
+    </body>
+</html>
